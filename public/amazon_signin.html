@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+        }
+        form{
+            width:400px;
+            border: 1px solid gray;
+            padding: 20px;
+        }
+       
+        a{
+            text-decoration: none;
+        }
+        .left-bar, .right-bar{
+            border-top: 1px solid gray;
+            width: 130px;
+        }
+        .new{
+            display: flex;
+        }
+        .bar-title{
+            margin-top: -15px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+        }
+       
+    </style>
+</head>
+
+<body class="container-fluid">
+   
+    
+    <div>
+       
+        <form>
+           
+            <h1>Sign in</h1>
+            <div>
+                <div class="mt-4">
+                    <label><b>email or mobile phone number</b></label>
+                </div>
+                <div class="mb-2">
+                    <input type="text" placeholder="email or mobile" class="form-control">
+                </div>
+            </div>
+            <div class="mb-3 mt-3 ">
+                <button class="btn btn-warning w-100" >Continue</button>
+            </div>
+            <div>
+                <p>By continueing,you agree to amazon's conditions of use and privacy notice</p>
+            </div>
+            <div>
+                <details>
+                    <summary><a href="#"> Need HELP?</a></summary>
+                    <dl class="mb-2 me-2"> 
+                        <dd><a href="#" > forget password</a></dd>
+                        <dd><a href="#"> other issues with sign-in</a></dd>
+                    </dl>
+                </details>
+            </div>
+        </form>
+        <div class="mt-4">
+           <div class="new" >
+            <div class="left-bar"></div>
+            <span class="bar-title">new to amazon</span>
+            <div class="right-bar"></div>
+           </div>
+        </div>
+        <div class="mt-3 mb-3">
+            <button class="btn btn-secondary w-100">create your own account</button>
+        </div>
+        
+    </div>
+</body>
+</html>

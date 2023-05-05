@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dt{
+            font-weight: bold;
+        }
+        .username:invalid+div
+        {
+            display: block;
+            color: blueviolet;
+        }
+        .username:valid+div
+        {
+            display: none;
+        }
+        .mobile:invalid+div{
+            display: inline;
+            color: red;
+        }
+        .mobile:valid+div{
+            display: none;
+        }
+        .username:read-only{
+            cursor:not-allowed;
+        }
+        .mobile:invalid{
+            border: 2px solid red;
+            box-shadow: 2px 2px 2px red;
+        }
+        .mobile:valid{
+            border: 2px solid green;
+            box-shadow: 2px 2px 2px green;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <dt>username</dt>
+        <dd>
+            <input type="text" value="john" readonly class="username" required>
+            <div>user name required</div>
+        </dd>
+        <dt>mobile</dt>
+        <dd>
+            <input type="text" pattern="\d{10}" class="mobile">
+            <div>invalid mobile number,10 digits required</div>
+         </dd>
+    </form>
+    
+</body>
+</html>

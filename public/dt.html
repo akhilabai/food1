@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dt
+        {
+            font-weight: bold;
+            background-color: aqua;
+            color: brown;
+            
+            margin-bottom: 10px;
+
+        }
+        dl
+        {
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+        fieldset
+        {
+            margin-bottom: 40px;
+
+        }
+        legend
+        {
+            background-color: black;
+            padding: 5px;
+            color: white;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 12px 12px 5px red;
+        }
+        .last
+        {
+            display: flex;
+            grid-template-columns: 3fr 9fr;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>personal details</legend>
+    <dl>
+        <dt>First Name</dt>
+        <dd>akhila</dd>
+        <dt>Last Name</dt>
+        <dd>Vadithe</dd>
+        <dt>Age</dt>
+        <dd>20</dd>
+    </dl>
+    </fieldset>
+    <dl class="last">
+        <fieldset>
+            <legend>educational details</legend>
+        <dt>scholl</dt>
+        <dd>hgfh</dd>
+        <dt>college</dt>
+        <dd>jntu</dd>
+    </dl>
+       </fieldset>
+    
+</body>
+</html>

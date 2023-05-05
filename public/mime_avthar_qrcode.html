@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css" media="screen">
+        .qr{
+            display: none;
+        }
+        .details{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+        dt{
+            background-color:aqua;
+            color: blue;
+            margin-bottom: 20px;
+            font-size: 20px;
+            
+        }
+        dd{
+            background-color: peru;
+            color: white;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+    </style>
+    <style type="text/css" media="print">
+        .poster,button{
+            display: none;
+        }
+        dt,dd{
+            background-color: none;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <dl style="width: 300px;">
+        <dt>Booking summary </dt>
+        <img class="qr" src="avatharqrcode.png" width="300" height="200">
+        <img class="poster" src="avathar.jpeg" width="300" height="200">
+        <dl class="details">
+            <dt>Movie Name :</dt>
+            <dd>avathar</dd>
+            <dt>Cinema :</dt>
+            <dd>PVR Cinema Hyd</dd>
+            <dt>Show time :</dt>
+            <dd>10:30pm</dd>
+        </dl>
+    </dl>
+    <button onclick="window.print()">print ticket</button>
+</body>
+</html>
